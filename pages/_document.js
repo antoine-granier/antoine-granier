@@ -8,7 +8,7 @@ export default class Document extends NextDocument {
             <Html lang='en'>
                 <Head>
                     <title>Antoine Granier - Portfolio</title>
-                    <meta name="description" content="Découvrez le portfolio d'Antoine Granier, jeune développeur web fullstack."
+                    <meta name="description" content="Découvrez le portfolio d'Antoine Granier, jeune développeur web fullstack."/>
                 </Head>
                 <body>
                     <ColorModeScript initialColorMode={theme.config.initialColorMode}/>
