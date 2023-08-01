@@ -21,7 +21,7 @@ const Page = () => {
                         <p>Web Developer | Designer</p>
                     </Box>
                     <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} align="center">
-                        <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" width="100px" height="100px" maxWidth="100px" display="inline-block" borderRadius="full" src="/images/me.jpg" alt="Profile Image"/>
+                        <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" width="100px" height="100px" maxWidth="100px" display="inline-block" borderRadius="full" src="/images/me2.jpg" alt="Profile Image"/>
                     </Box>
                 </Box>
                 <Section delay={0.1}>
