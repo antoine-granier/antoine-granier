@@ -29,7 +29,7 @@ const Page = () => {
                         About
                     </Heading>
                     <Paragraph>
-                        I am a young French fullstack web developer. I am currently doing a professional degree in web and mobile development at the Sorbonne University in Paris. I have a strong attraction for websites and well-designed applications. My goal is to be as good in development as in design.
+                        I am a young French fullstack web developer. I am currently doing a master in web development and management at Efrei Paris. I have a strong attraction for websites and well-designed applications. My goal is to be as good in development as in design.
                     </Paragraph>
                     <Box align="center" my={4}>
                         <Link href="/doc/CV.pdf" target="_blank">
