@@ -65,7 +65,7 @@ const Page = () => {
                         I ❤️
                     </Heading>
                     <Paragraph>
-                        Design (<Link href="https://www.figma.com/file/KfiArebMA9BVRNB5YSrZd7/Refont-Discogs?node-id=0%3A1&t=A4lhITQX3FneuQ1n-1" target="_blank">Discogs Redesign</Link>, <Link href="https://www.figma.com/proto/0vzIZMA6eKLPnlZmzT2M1x/Styles-Studio---Website?page-id=0%3A1&node-id=6%3A3&starting-point-node-id=6%3A3" target="_blank">Web Agency Design</Link>), 
+                        Design (<Link href="https://www.figma.com/file/KfiArebMA9BVRNB5YSrZd7/Refont-Discogs?node-id=0%3A1&t=A4lhITQX3FneuQ1n-1" target="_blank">Discogs Redesign</Link>), 
                         Video Games, Automotive, Hardware (Custom Computer)
                     </Paragraph>
                 </Section>
