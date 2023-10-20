@@ -16,7 +16,7 @@ const Projects = () => {
                 <SimpleGrid columns={1} gap={6}>
                     <Section>
                         <ProjectGridItem id="crm_aloes_insystem" title="CRM Aloes Insystem" thumbnail={crmAloesInsystem}>
-                            A web application that gives the temperature of the rivers in the Gironde region.
+                            Aloes internal tools (Holiday booking, ticket management, interventions and licences, rights management, deferral of development time, aged trial balance, etc.)
                         </ProjectGridItem>
                     </Section>
                     <Section>
