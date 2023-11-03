@@ -3,7 +3,7 @@ import NextLink from 'next/link'
 import { Box, Text, LinkBox, LinkOverlay} from '@chakra-ui/react';
 import { Global } from '@emotion/react';
 // import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
+// import 'react-medium-image-zoom/dist/styles.css'
 
 export const GridItem = ({children, href, title, thumbnail}) => (
     <Box w="100%" align="center">

@@ -4,6 +4,8 @@ import { Title, ProjectImage, Meta } from "../../components/project";
 import P from '../../components/paragraph'
 import Layout from '../../components/layout/article'
 import waterTemperature from '../../public/images/projects/water_temperature.png'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 const Project = () => {
 
@@ -26,7 +28,9 @@ const Project = () => {
                         <span>PHP, Javascript (Vanilla)</span>
                     </ListItem>
                 </List>
-                <ProjectImage src={waterTemperature.src} alt="Home page" placeholder='blur'/>
+                <Zoom>
+                    <ProjectImage src={waterTemperature.src} alt="Home page" placeholder='blur'/>
+                </Zoom>
             </Container>
         </Layout>
     )

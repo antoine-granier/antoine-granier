@@ -5,6 +5,8 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layout/article'
 import CRMImage1 from '../../public/images/projects/crm_aloes_insystem_01.png'
 import CRMImage2 from '../../public/images/projects/crm_aloes_insystem_02.png'
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 const Project = () => {
 
@@ -27,8 +29,12 @@ const Project = () => {
                         <span>NodeJS, React, Vite, Electron (Time recording application)</span>
                     </ListItem>
                 </List>
-                <ProjectImage src={CRMImage1.src} alt="Home page" placeholder='blur'/>
-                <ProjectImage src={CRMImage2.src} alt="Profile page" placeholder='blur'/>
+                <Zoom>
+                    <ProjectImage src={CRMImage1.src} alt="Home page" placeholder='blur'/>
+                </Zoom>
+                <Zoom>
+                    <ProjectImage src={CRMImage2.src} alt="Profile page" placeholder='blur'/>
+                </Zoom>
             </Container>
         </Layout>
     )
