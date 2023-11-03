@@ -27,8 +27,8 @@ const Project = () => {
                         <span>NodeJS, React, Vite, Electron (Time recording application)</span>
                     </ListItem>
                 </List>
-                <ProjectImage src={CRMImage1.src} alt="Home page"/>
-                <ProjectImage src={CRMImage2.src} alt="Profile page"/>
+                <ProjectImage src={CRMImage1.src} alt="Home page" placeholder='blur'/>
+                <ProjectImage src={CRMImage2.src} alt="Profile page" placeholder='blur'/>
             </Container>
         </Layout>
     )

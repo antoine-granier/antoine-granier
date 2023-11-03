@@ -26,7 +26,7 @@ const Project = () => {
                         <span>PHP, Javascript (Vanilla)</span>
                     </ListItem>
                 </List>
-                <ProjectImage src={waterTemperature.src} alt="Home page"/>
+                <ProjectImage src={waterTemperature.src} alt="Home page" placeholder='blur'/>
             </Container>
         </Layout>
     )
