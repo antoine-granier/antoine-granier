@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import NextLink from 'next/link'
-import { Box, Text, LinkBox, LinkOverlay, Link} from '@chakra-ui/react';
+import { Box, Text, LinkBox, LinkOverlay} from '@chakra-ui/react';
 import { Global } from '@emotion/react';
 // import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
