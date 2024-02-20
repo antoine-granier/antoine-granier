@@ -5,20 +5,24 @@ import { ChevronRightIcon } from "@chakra-ui/icons"
 import { BioSection, BioYear } from "../components/bio"
 import Layout from "../components/layout/article"
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5"
+import { useTranslation } from "react-i18next"
 
 const Page = () => {
+
+    const { t } = useTranslation();
+
     return (
         <Layout>
             <Container>
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                    Hello, I am a full-stack developer based in France !
+                    {t("header")}
                 </Box>
                 <Box display={{md: 'flex'}}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
                             Antoine Granier
                         </Heading>
-                        <p>Web Developer | Designer</p>
+                        <p>{t("job")}</p>
                     </Box>
                     <Box flexShrink={0} mt={{base: 4, md: 0}} ml={{md: 6}} align="center">
                         <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" width="100px" height="100px" maxWidth="100px" display="inline-block" borderRadius="full" src={useColorModeValue("/images/me-dark.png", "/images/me-light.png")} alt="Profile Image"/>
@@ -26,10 +30,10 @@ const Page = () => {
                 </Box>
                 <Section delay={0.1}>
                     <Heading as="h3" variant="section-title">
-                        About
+                        {t("about")}
                     </Heading>
                     <Paragraph>
-                        I am a young French fullstack web developer. I am currently doing a master in web development and management at Efrei Paris. I have a strong attraction for websites and well-designed applications. My goal is to be as good in development as in design.
+                        {t("description")}
                     </Paragraph>
                     <Box align="center" my={4}>
                         <Link href="/doc/CV.pdf" target="_blank">
@@ -45,32 +49,32 @@ const Page = () => {
                     </Heading>
                     <BioSection>
                         <BioYear>2002</BioYear>
-                        Born in Bondy, France.
+                        {t("bio-2002")}
                     </BioSection>
                     <BioSection>
                         <BioYear>2022</BioYear>
-                        Complete the computer science degree (DUT) in the Gustave Eiffel University.
+                        {t("bio-2022")}
                     </BioSection>
                     <BioSection>
                         <BioYear>2022-2023</BioYear>
-                        Complete a professional degree in web and mobile development at the Sorbonne University in Paris. I am working as an internship fullstack developer at Aloes.
+                        {t("bio-2022-2023")}
                     </BioSection>
                     <BioSection>
-                        <BioYear>2023</BioYear>
-                        Start a dev manager fullstack master at Efrei school in Paris. I am working as an internship fullstack developer at Aloes.
+                        <BioYear>2023-2025</BioYear>
+                        {t("bio-2023-2025")}
                     </BioSection>
                 </Section>
                 <Section delay={0.3}>
                     <Heading as="h3" variant="section-title">
-                        I ❤️
+                        {t("I")} ❤️
                     </Heading>
                     <Paragraph>
-                        Design (<Link href="https://www.figma.com/file/KfiArebMA9BVRNB5YSrZd7/Refont-Discogs?node-id=0%3A1&t=A4lhITQX3FneuQ1n-1" target="_blank">Discogs Redesign</Link>), 
-                        Video Games, Automotive, Hardware (Custom Computer)
+                        Design (<Link href="https://www.figma.com/file/KfiArebMA9BVRNB5YSrZd7/Refont-Discogs?node-id=0%3A1&t=A4lhITQX3FneuQ1n-1" target="_blank">{t("discogs")}</Link>), 
+                        {t("hobbies")}
                     </Paragraph>
                 </Section>
                 <Section delay={0.3}>
-                    <Heading as="h3" variant="section-title">On the web</Heading>
+                    <Heading as="h3" variant="section-title">{t("web")}</Heading>
                     <List>
                         <ListItem>
                             <Link href="https://github.com/antoine-granier" target="_blanck">

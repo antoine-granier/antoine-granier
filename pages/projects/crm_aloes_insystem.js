@@ -7,8 +7,11 @@ import CRMImage1 from '../../public/images/projects/crm_aloes_insystem_01.png'
 import CRMImage2 from '../../public/images/projects/crm_aloes_insystem_02.png'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
+import { useTranslation } from "react-i18next";
 
 const Project = () => {
+
+    const {t} = useTranslation()
 
     return (
         <Layout title="CRM Aloes Insystem">
@@ -17,15 +20,15 @@ const Project = () => {
                     CRM ALoes Insystem <Badge>2022 - 2023</Badge>
                 </Title>
                 <P>
-                Aloes internal tools (Holiday booking, ticket management, interventions and licences, rights management, deferral of development time, aged trial balance, etc.)
+                    {t("crm-description")}
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
-                        <Meta>Platform</Meta>
+                        <Meta>{t("Platform")}</Meta>
                         <span>Web</span>
                     </ListItem>
                     <ListItem>
-                        <Meta>Stack</Meta>
+                        <Meta>{t("Stack")}</Meta>
                         <span>NodeJS, React, Vite, Electron (Time recording application)</span>
                     </ListItem>
                 </List>
