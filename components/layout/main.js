@@ -4,8 +4,12 @@ import { Box, Container } from "@chakra-ui/react";
 import VoxelPc from '../voxel-pc.js';
 import NoSsr from '../no-ssr.js';
 import { useColorModeValue } from "@chakra-ui/react";
+import '../../lib/translation'
+import { useTranslation } from "react-i18next"
 
 const Main = ({children, router}) => {
+
+    const { t } = useTranslation();
 
     const bg = useColorModeValue('#f0e7db', '#202023')
 
@@ -13,10 +17,10 @@ const Main = ({children, router}) => {
         <Box as="main" pb={8} bg={bg} minHeight="100vh">
             <Head>
                 <meta name='viewport' content='width=device-width, initial-scale=1'/>
-                <title>Antoine Granier - Homepage</title>
+                <title>{t("head-title")}</title>
             </Head>
 
-            <Navbar path={router.asPath} />
+            <Navbar path={router.asPath}/>
 
             <Container maxW="container.md" pt={14}>
                 <NoSsr>

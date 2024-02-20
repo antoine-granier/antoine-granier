@@ -6,8 +6,11 @@ import Layout from '../../components/layout/article'
 import waterTemperature from '../../public/images/projects/water_temperature.png'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
+import { useTranslation } from "react-i18next";
 
 const Project = () => {
+
+    const {t} = useTranslation() 
 
     return (
         <Layout title="Water Temperature">
@@ -16,15 +19,15 @@ const Project = () => {
                     Water Temperature <Badge>2022</Badge>
                 </Title>
                 <P>
-                    A web application that gives the temperature of the rivers in the Gironde region.
+                    {t("A web application that gives the temperature of the rivers in the Gironde region.")}
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
-                        <Meta>Platform</Meta>
+                        <Meta>{t("Platform")}</Meta>
                         <span>Web</span>
                     </ListItem>
                     <ListItem>
-                        <Meta>Stack</Meta>
+                        <Meta>{t("Stack")}</Meta>
                         <span>PHP, Javascript (Vanilla)</span>
                     </ListItem>
                 </List>

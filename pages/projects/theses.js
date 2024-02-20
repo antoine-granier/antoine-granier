@@ -6,25 +6,28 @@ import Layout from '../../components/layout/article'
 import theses from '../../public/images/projects/theses.png'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
+import { useTranslation } from "react-i18next";
 
 const Project = () => {
+
+    const {t} = useTranslation()
 
     return (
         <Layout title="Theses">
             <Container>
                 <Title>
-                    Theses Refont <Badge>2021</Badge>
+                    {t("title-theses")} <Badge>2021</Badge>
                 </Title>
                 <P>
-                    I realised a total redesign of the Theses.fr website, both on the design and the functional side. Theses.fr is a website listing all the theses done in France.
+                    {t("theses")}
                 </P>
                 <List ml={4} my={4}>
                     <ListItem>
-                        <Meta>Platform</Meta>
+                        <Meta>{t("Platform")}</Meta>
                         <span>Web</span>
                     </ListItem>
                     <ListItem>
-                        <Meta>Stack</Meta>
+                        <Meta>{t("Stack")}</Meta>
                         <span>PHP, Javascript (Vanilla)</span>
                     </ListItem>
                 </List>

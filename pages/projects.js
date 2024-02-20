@@ -5,28 +5,32 @@ import Layout from "../components/layout/article";
 import waterTemperatureThumbnail from '../public/images/projects/water_temperature.png'
 import thesesThumbnail from '../public/images/projects/theses.png'
 import crmAloesInsystem from '../public/images/projects/crm_aloes_insystem.png'
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+
+    const { t } = useTranslation();
+
     return (
         <Layout>
             <Container>
                 <Heading as="h3" fontSize={20} mb={4}>
-                    Projects
+                    {t("projects")}
                 </Heading>
                 <SimpleGrid columns={1} gap={6}>
                     <Section>
                         <ProjectGridItem id="crm_aloes_insystem" title="CRM Aloes Insystem" thumbnail={crmAloesInsystem}>
-                            Aloes internal tools (Holiday booking, ticket management, interventions and licences, rights management, deferral of development time, aged trial balance, etc.)
+                            {t("crm-aloes-insystem")}
                         </ProjectGridItem>
                     </Section>
                     <Section>
                         <ProjectGridItem id="water_temperature" title="Water Temperature" thumbnail={waterTemperatureThumbnail}>
-                            A web application that gives the temperature of the rivers in the Gironde region.
+                            {t("water-temperature")}
                         </ProjectGridItem>
                     </Section>
                     <Section>
-                        <ProjectGridItem id="theses" title="Refont Theses.fr" thumbnail={thesesThumbnail}>
-                            I realised a total redesign of the Theses.fr website, both on the design and the functional side. Theses.fr is a website listing all the theses done in France.
+                        <ProjectGridItem id="theses" title={t("title-theses")} thumbnail={thesesThumbnail}>
+                            {t("theses")}
                         </ProjectGridItem>
                     </Section>
                 </SimpleGrid>
