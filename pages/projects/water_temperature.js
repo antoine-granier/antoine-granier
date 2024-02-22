@@ -3,7 +3,7 @@ import { Container, Badge, List, ListItem } from "@chakra-ui/react";
 import { Title, ProjectImage, Meta } from "../../components/project";
 import P from '../../components/paragraph'
 import Layout from '../../components/layout/article'
-import waterTemperature from '../../public/images/projects/water_temperature.png'
+import waterTemperature from '../../public/images/projects/water_temperature.webp'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 import { useTranslation } from "react-i18next";

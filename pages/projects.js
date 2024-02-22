@@ -2,9 +2,9 @@ import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import Section from "../components/section";
 import { ProjectGridItem } from "../components/grid-item";
 import Layout from "../components/layout/article";
-import waterTemperatureThumbnail from '../public/images/projects/water_temperature.png'
-import thesesThumbnail from '../public/images/projects/theses.png'
-import crmAloesInsystem from '../public/images/projects/crm_aloes_insystem.png'
+import waterTemperatureThumbnail from '../public/images/projects/water_temperature.webp'
+import thesesThumbnail from '../public/images/projects/theses.webp'
+import crmAloesInsystem from '../public/images/projects/crm_aloes_insystem.webp'
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {

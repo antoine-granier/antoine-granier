@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Heading, Box, Image, Link, Badge } from '@chakra-ui/react'
+import { Heading, Box, Image, Badge, useColorModeValue } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { useTranslation } from 'react-i18next'
 
@@ -9,8 +9,8 @@ export const Title = ({ children }) => {
 
     return (
         <Box>
-            <NextLink href="/projects">
-                <Link>{t("projects")}</Link>
+            <NextLink href="/projects" style={{color: useColorModeValue('#7a5cd0', '#f6d492')}}>
+                {t("projects")}
             </NextLink>
             <span>
                 &nbsp;

@@ -19,7 +19,7 @@ padding: 10px;
 `
 
 const Logo = () => {
-    const wheelImg = `/images/tire${useColorModeValue('', '-dark')}.png`;
+    const wheelImg = `/images/tire${useColorModeValue('', '-dark')}.webp`;
 
     return (
         <Link legacyBehavior href="/">

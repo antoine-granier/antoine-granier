@@ -3,7 +3,7 @@ import { Container, Badge, List, ListItem } from "@chakra-ui/react";
 import { Title, ProjectImage, Meta } from "../../components/project";
 import P from '../../components/paragraph'
 import Layout from '../../components/layout/article'
-import theses from '../../public/images/projects/theses.png'
+import theses from '../../public/images/projects/theses.webp'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 import { useTranslation } from "react-i18next";

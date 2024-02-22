@@ -3,8 +3,8 @@ import { Container, Badge, List, ListItem } from "@chakra-ui/react";
 import { Title, ProjectImage, Meta } from "../../components/project";
 import P from '../../components/paragraph'
 import Layout from '../../components/layout/article'
-import CRMImage1 from '../../public/images/projects/crm_aloes_insystem_01.png'
-import CRMImage2 from '../../public/images/projects/crm_aloes_insystem_02.png'
+import CRMImage1 from '../../public/images/projects/crm_aloes_insystem_01.webp'
+import CRMImage2 from '../../public/images/projects/crm_aloes_insystem_02.webp'
 import Zoom from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 import { useTranslation } from "react-i18next";

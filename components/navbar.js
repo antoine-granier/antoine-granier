@@ -1,5 +1,5 @@
 import Logo from "./logo";
-import NextLink from "next/link";
+import NextLink from "next/link"
 import {Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue, Select, Divider} from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
@@ -10,9 +10,7 @@ const LinkItem = ({href, path, children}) => {
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
 
     return (
-        <NextLink href={href}>
-            <Link href={href} p={2} bg={active ? 'glassTeal' : undefined} color={active ? '#202023' : inactiveColor}>{children}</Link>
-        </NextLink>
+        <Link href={href} p={2} bg={active ? 'glassTeal' : undefined} color={active ? '#202023' : inactiveColor}>{children}</Link>
     )
 }
 
@@ -33,12 +31,6 @@ const Navbar = props => {
                     <LinkItem href="/projects" path={path}>
                         {t("projects")}
                     </LinkItem>
-                    {/* <LinkItem href="/designs" path={path}>
-                        Designs
-                    </LinkItem>
-                    <LinkItem href="/experience" path={path}>
-                        Experience
-                    </LinkItem> */}
                 </Stack>
                 <Box display="flex" gap="1rem" flex={1} align="right" justifyContent='flex-end'>
                     <Select display={{base: 'none', md: 'block'}} w="fit-content" value={i18n.language} onChange={(e) => i18n.changeLanguage(e.target.value)}>
@@ -52,10 +44,10 @@ const Navbar = props => {
                             </MenuButton>
                             <MenuList>
                                 <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>{t("about")}</MenuItem>
+                                    <MenuItem>{t("about")}</MenuItem>
                                 </NextLink>
                                 <NextLink href="/projects" passHref>
-                                    <MenuItem as={Link}>{t("projects")}</MenuItem>
+                                    <MenuItem>{t("projects")}</MenuItem>
                                 </NextLink>
                                 <Divider py="0.125rem"/>
                                 <Box display="flex" alignItems="center" px="0.75rem" pt="0.75rem" pb="0.375rem" gap="1rem">
@@ -65,12 +57,6 @@ const Navbar = props => {
                                         <option value="en">En</option>
                                     </Select>
                                 </Box>
-                                {/* <NextLink href="/designs" passHref>
-                                    <MenuItem as={Link}>Designs</MenuItem>
-                                </NextLink>
-                                <NextLink href="/experience" passHref>
-                                    <MenuItem as={Link}>Experience</MenuItem>
-                                </NextLink> */}
                             </MenuList>
                         </Menu>
                     </Box>
