@@ -1,0 +1,11 @@
+.my-link {
+    padding: .5rem;
+    color: var(--chakra-colors-whiteAlpha-900);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    text-underline-offset: 3px;
+}
+
+.my-link:hover {
+    text-decoration: underline;
+}

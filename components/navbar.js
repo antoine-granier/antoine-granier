@@ -15,7 +15,6 @@ const LinkItem = ({href, path, children}) => {
 }
 
 const Navbar = props => {
-    const path = props
 
     const { t, i18n } = useTranslation();
 
@@ -28,9 +27,16 @@ const Navbar = props => {
                     </Heading>
                 </Flex>
                 <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'auto'}} alignItems="center" flexGrow={1} mt={{base: 4, nmd: 0}}>
-                    <LinkItem href="/projects" path={path}>
+                    <NextLink 
+                        style={{color: useColorModeValue('#000000', '#ffffff')}}
+                        className="my-link"
+                        href="/projects" passHref
+                    >
                         {t("projects")}
-                    </LinkItem>
+                    </NextLink>
+                    <NextLink style={{color: useColorModeValue('#000000', '#ffffff')}} className="my-link" href="/photography" passHref>
+                        {t("Photography")}
+                    </NextLink>
                 </Stack>
                 <Box display="flex" gap="1rem" flex={1} align="right" justifyContent='flex-end'>
                     <Select display={{base: 'none', md: 'block'}} w="fit-content" value={i18n.language} onChange={(e) => i18n.changeLanguage(e.target.value)}>
@@ -48,6 +54,9 @@ const Navbar = props => {
                                 </NextLink>
                                 <NextLink href="/projects" passHref>
                                     <MenuItem>{t("projects")}</MenuItem>
+                                </NextLink>
+                                <NextLink href="/photography" passHref>
+                                    <MenuItem>{t("Photography")}</MenuItem>
                                 </NextLink>
                                 <Divider py="0.125rem"/>
                                 <Box display="flex" alignItems="center" px="0.75rem" pt="0.75rem" pb="0.375rem" gap="1rem">
