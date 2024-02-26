@@ -9,3 +9,7 @@
 .my-link:hover {
     text-decoration: underline;
 }
+
+.ReactGridGallery > div {
+    justify-content: center;
+}
