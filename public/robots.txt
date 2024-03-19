@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://antoine-granier.vercel.app/sitemap.xml
