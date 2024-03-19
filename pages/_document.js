@@ -13,6 +13,7 @@ export default class Document extends NextDocument {
                     <meta property="og:type" content="website" />
                     <meta property="og:url" content="https://antoine-granier.vercel.app" />
                     <meta property="og:site_name" content="Antoine Granier - Portfolio" />
+                    <meta name="google-site-verification" content="m-IRRKTQ59iJRLIjo62uHVqQEzvie3YdgiDnpszplqY" />
                     <link rel="icon" href="/favicon.ico" sizes="any" />
                 </Head>
                 <body>
