@@ -367,7 +367,6 @@ const Photography = () => {
                     <Image
                         className={`max-w-[100%] md:max-w-[${modalImage?.or === "portrait" ? "700px" : "600px"}]`}
                         style={{
-                            // maxWidth: modalImage?.or === "portrait" ? "700px" : "600px",
                             rotate: modalImage?.or === "portrait" ? "-90deg" : "0deg",
                         }}
                         src={modalImage?.src} 
