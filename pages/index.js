@@ -6,6 +6,7 @@ import { BioSection, BioYear } from "../components/bio"
 import Layout from "../components/layout/article"
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5"
 import { useTranslation } from "react-i18next"
+import NextLink from "next/link"
 
 const Page = () => {
 
@@ -69,7 +70,7 @@ const Page = () => {
                         {t("I")} ❤️
                     </Heading>
                     <Paragraph>
-                        Design (<Link href="https://www.figma.com/file/KfiArebMA9BVRNB5YSrZd7/Refont-Discogs?node-id=0%3A1&t=A4lhITQX3FneuQ1n-1" target="_blank">{t("discogs")}</Link>), 
+                        <NextLink style={{color: useColorModeValue('#7a5cd0', '#f6d492')}} className="hover:underline underline-offset-[3px]" href="/photography" passHref>Photography</NextLink>, Design (<Link href="https://www.figma.com/file/KfiArebMA9BVRNB5YSrZd7/Refont-Discogs?node-id=0%3A1&t=A4lhITQX3FneuQ1n-1" target="_blank">{t("discogs")}</Link>), 
                         {t("hobbies")}
                     </Paragraph>
                 </Section>

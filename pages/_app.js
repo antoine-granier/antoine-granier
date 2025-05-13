@@ -4,6 +4,7 @@ import theme from '../lib/theme'
 import Fonts from "../components/fonts";
 import { AnimatePresence } from "framer-motion";
 import "../components/index.css"
+import "./global.css"
 
 const Website = ({Component, pageProps, router}) => {
     return (
