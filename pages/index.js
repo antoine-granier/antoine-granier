@@ -64,6 +64,10 @@ const Page = () => {
                         <BioYear>2023-2025</BioYear>
                         {t("bio-2023-2025")}
                     </BioSection>
+                    <BioSection>
+                        <BioYear>2025 - {t("now")}</BioYear>
+                        {t("bio-aloes")}
+                    </BioSection>
                 </Section>
                 <Section delay={0.3}>
                     <Heading as="h3" variant="section-title">
