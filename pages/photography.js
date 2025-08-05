@@ -1,4 +1,4 @@
-import { Container, Grid, Heading, Image, Link, useColorModeValue } from "@chakra-ui/react"
+import { Container, Grid, Heading, Image, Link } from "@chakra-ui/react"
 import Layout from "../components/layout/article"
 import { useTranslation } from "react-i18next"
 import Paragraph from "../components/paragraph"
@@ -41,158 +41,156 @@ import image26 from "../public/images/photography/pictures/image_26.webp";
 import image27 from "../public/images/photography/pictures/image_27.webp";
 import image28 from "../public/images/photography/pictures/image_28.webp";
 import image29 from "../public/images/photography/pictures/image_29.webp";
-import { useState } from "react"
-import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const Photography = () => {
 
-    const images = [
-        {
-            src: image1.src,
-            alt: "image1",
-            or: "portrait"
-        },
-        {
-            src: image2.src,
-            alt: "image2",
-            or: "landscape"
-        },
-        {
-            src: image3.src,
-            alt: "image3",
-            or: "landscape"
-        },
-        {
-            src: image4.src,
-            alt: "image4",
-            or: "landscape"
-        },
-        {
-            src: image5.src,
-            alt: "image5",
-            or: "portrait"
-        },
-        {
-            src: image6.src,
-            alt: "image6",
-            or: "landscape"
-        },
-        {
-            src: image7.src,
-            alt: "image7",
-            or: "landscape"
-        },
-        {
-            src: image8.src,
-            alt: "image8",
-            or: "landscape"
-        },
-        {
-            src: image9.src,
-            alt: "image9",
-            or: "landscape"
-        },
-        {
-            src: image10.src,
-            alt: "image10",
-            or: "landscape"
-        },
-        {
-            src: image11.src,
-            alt: "image11",
-            or: "landscape"
-        },
-        {
-            src: image12.src,
-            alt: "image12",
-            or: "landscape"
-        },
-        {
-            src: image13.src,
-            alt: "image13",
-            or: "landscape"
-        },
-        {
-            src: image14.src,
-            alt: "image14",
-            or: "landscape"
-        },
-        {
-            src: image15.src,
-            alt: "image15",
-            or: "landscape"
-        },
-        {
-            src: image16.src,
-            alt: "image16",
-            or: "landscape"
-        },
-        {
-            src: image17.src,
-            alt: "image17",
-            or: "landscape"
-        },
-        {
-            src: image18.src,
-            alt: "image18",
-            or: "landscape"
-        },
-        {
-            src: image19.src,
-            alt: "image19",
-            or: "landscape"
-        },
-        {
-            src: image20.src,
-            alt: "image20",
-            or: "landscape"
-        },
-        {
-            src: image21.src,
-            alt: "image21",
-            or: "landscape"
-        },
-        {
-            src: image22.src,
-            alt: "image22",
-            or: "landscape"
-        },
-        {
-            src: image23.src,
-            alt: "image23",
-            or: "landscape"
-        },
-        {
-            src: image24.src,
-            alt: "image24",
-            or: "landscape"
-        },
-        {
-            src: image25.src,
-            alt: "image25",
-            or: "landscape"
-        },
-        {
-            src: image26.src,
-            alt: "image26",
-            or: "landscape"
-        },
-        {
-            src: image27.src,
-            alt: "image27",
-            or: "landscape"
-        },
-        {
-            src: image28.src,
-            alt: "image28",
-            or: "landscape"
-        },
-        {
-            src: image29.src,
-            alt: "image29",
-            or: "landscape"
-        }
-    ];
+    // const images = [
+    //     {
+    //         src: image1.src,
+    //         alt: "image1",
+    //         or: "portrait"
+    //     },
+    //     {
+    //         src: image2.src,
+    //         alt: "image2",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image3.src,
+    //         alt: "image3",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image4.src,
+    //         alt: "image4",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image5.src,
+    //         alt: "image5",
+    //         or: "portrait"
+    //     },
+    //     {
+    //         src: image6.src,
+    //         alt: "image6",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image7.src,
+    //         alt: "image7",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image8.src,
+    //         alt: "image8",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image9.src,
+    //         alt: "image9",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image10.src,
+    //         alt: "image10",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image11.src,
+    //         alt: "image11",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image12.src,
+    //         alt: "image12",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image13.src,
+    //         alt: "image13",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image14.src,
+    //         alt: "image14",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image15.src,
+    //         alt: "image15",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image16.src,
+    //         alt: "image16",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image17.src,
+    //         alt: "image17",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image18.src,
+    //         alt: "image18",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image19.src,
+    //         alt: "image19",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image20.src,
+    //         alt: "image20",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image21.src,
+    //         alt: "image21",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image22.src,
+    //         alt: "image22",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image23.src,
+    //         alt: "image23",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image24.src,
+    //         alt: "image24",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image25.src,
+    //         alt: "image25",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image26.src,
+    //         alt: "image26",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image27.src,
+    //         alt: "image27",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image28.src,
+    //         alt: "image28",
+    //         or: "landscape"
+    //     },
+    //     {
+    //         src: image29.src,
+    //         alt: "image29",
+    //         or: "landscape"
+    //     }
+    // ];
     
 
     const { t } = useTranslation()
