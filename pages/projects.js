@@ -3,8 +3,8 @@ import Section from "../components/section";
 import { ProjectGridItem } from "../components/grid-item";
 import Layout from "../components/layout/article";
 import waterTemperatureThumbnail from '../public/images/projects/water_temperature.webp'
-import thesesThumbnail from '../public/images/projects/theses.webp'
 import crmAloesInsystem from '../public/images/projects/crm_aloes_insystem.webp'
+import graphiteThumbnail from '../public/images/projects/graphite.webp'
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
@@ -19,6 +19,11 @@ const Projects = () => {
                 </Heading>
                 <SimpleGrid columns={1} gap={6}>
                     <Section>
+                        <ProjectGridItem id="graphite" title="Graphite draw app" thumbnail={graphiteThumbnail}>
+                            {t("graphite")}
+                        </ProjectGridItem>
+                    </Section>
+                    <Section>
                         <ProjectGridItem id="crm_aloes_insystem" title="CRM Aloes Insystem" thumbnail={crmAloesInsystem}>
                             {t("crm-aloes-insystem")}
                         </ProjectGridItem>
@@ -26,11 +31,6 @@ const Projects = () => {
                     <Section>
                         <ProjectGridItem id="water_temperature" title="Water Temperature" thumbnail={waterTemperatureThumbnail}>
                             {t("water-temperature")}
-                        </ProjectGridItem>
-                    </Section>
-                    <Section>
-                        <ProjectGridItem id="theses" title={t("title-theses")} thumbnail={thesesThumbnail}>
-                            {t("theses")}
                         </ProjectGridItem>
                     </Section>
                 </SimpleGrid>

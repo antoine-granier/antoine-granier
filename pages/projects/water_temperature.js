@@ -1,4 +1,4 @@
-import { Container, Badge, List, ListItem } from "@chakra-ui/react";
+import { Container, Badge, List, ListItem, Link } from "@chakra-ui/react";
 // import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Title, ProjectImage, Meta } from "../../components/project";
 import P from '../../components/paragraph'
@@ -29,6 +29,14 @@ const Project = () => {
                     <ListItem>
                         <Meta>{t("Stack")}</Meta>
                         <span>PHP, Javascript (Vanilla)</span>
+                    </ListItem>
+                    <ListItem>
+                        <Badge colorScheme='red' mr={2}>
+                            {t("Preview")}
+                        </Badge>
+                        <Link href="https://trolltroll.alwaysdata.net/-TESTS_INSYSTEM/" isExternal>
+                            {t("View the project")}
+                        </Link>
                     </ListItem>
                 </List>
                 <Zoom>
