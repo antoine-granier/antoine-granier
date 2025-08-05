@@ -1,4 +1,4 @@
-import { Container, Grid, Heading, Image, useColorModeValue } from "@chakra-ui/react"
+import { Container, Grid, Heading, Image, Link, useColorModeValue } from "@chakra-ui/react"
 import Layout from "../components/layout/article"
 import { useTranslation } from "react-i18next"
 import Paragraph from "../components/paragraph"
@@ -197,7 +197,7 @@ const Photography = () => {
 
     const { t } = useTranslation()
 
-    const [modalImage, setModalImage] = useState(null)
+    // const [modalImage, setModalImage] = useState(null)
 
     return (
         <>
@@ -233,102 +233,102 @@ const Photography = () => {
                     </Heading>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <div className="grid gap-4">
-                            <div>
-                                <Image id="1" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image1.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="2" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image2.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="3" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image3.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="18" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image18.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="19" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image19.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="23" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image23.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="27" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image27.src} alt=""/>
-                            </div>
+                            <Link href={image1.src} isExternal>
+                                <Image id="1" loading="lazy" className="h-auto max-w-full rounded-lg" src={image1.src} alt=""/>
+                            </Link>
+                            <Link href={image2.src} isExternal>
+                                <Image id="2" loading="lazy" className="h-auto max-w-full rounded-lg" src={image2.src} alt=""/>
+                            </Link>
+                            <Link href={image3.src} isExternal>
+                                <Image id="3" loading="lazy" className="h-auto max-w-full rounded-lg" src={image3.src} alt=""/>
+                            </Link>
+                            <Link href={image18.src} isExternal>
+                                <Image id="18" loading="lazy" className="h-auto max-w-full rounded-lg" src={image18.src} alt=""/>
+                            </Link>
+                            <Link href={image19.src} isExternal>
+                                <Image id="19" loading="lazy" className="h-auto max-w-full rounded-lg" src={image19.src} alt=""/>
+                            </Link>
+                            <Link href={image23.src} isExternal>
+                                <Image id="23" loading="lazy" className="h-auto max-w-full rounded-lg" src={image23.src} alt=""/>
+                            </Link>
+                            <Link href={image27.src} isExternal>
+                                <Image id="27" loading="lazy" className="h-auto max-w-full rounded-lg" src={image27.src} alt=""/>
+                            </Link>
                         </div>
                         <div className="grid gap-4">
-                            <div>
-                                <Image id="4" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image4.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="5" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image5.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="6" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image6.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="17" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image17.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="20" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image20.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="24" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image24.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="28" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image28.src} alt=""/>
-                            </div>
+                            <Link href={image4.src} isExternal>
+                                <Image id="4" loading="lazy" className="h-auto max-w-full rounded-lg" src={image4.src} alt=""/>
+                            </Link>
+                            <Link href={image5.src} isExternal>
+                                <Image id="5" loading="lazy" className="h-auto max-w-full rounded-lg" src={image5.src} alt=""/>
+                            </Link>
+                            <Link href={image6.src} isExternal>
+                                <Image id="6" loading="lazy" className="h-auto max-w-full rounded-lg" src={image6.src} alt=""/>
+                            </Link>
+                            <Link href={image17.src} isExternal>
+                                <Image id="17" loading="lazy" className="h-auto max-w-full rounded-lg" src={image17.src} alt=""/>
+                            </Link>
+                            <Link href={image20.src} isExternal>
+                                <Image id="20" loading="lazy" className="h-auto max-w-full rounded-lg" src={image20.src} alt=""/>
+                            </Link>
+                            <Link href={image24.src} isExternal>
+                                <Image id="24" loading="lazy" className="h-auto max-w-full rounded-lg" src={image24.src} alt=""/>
+                            </Link>
+                            <Link href={image28.src} isExternal>
+                                <Image id="28" loading="lazy" className="h-auto max-w-full rounded-lg" src={image28.src} alt=""/>
+                            </Link>
                         </div>
                         <div className="grid gap-4">
-                            <div>
-                                <Image id="7" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image7.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="8" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image8.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="9" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image9.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="16" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image16.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="21" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image21.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="25" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image25.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="29" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image29.src} alt=""/>
-                            </div>
+                            <Link href={image7.src} isExternal>
+                                <Image id="7" loading="lazy" className="h-auto max-w-full rounded-lg" src={image7.src} alt=""/>
+                            </Link>
+                            <Link href={image8.src} isExternal>
+                                <Image id="8" loading="lazy" className="h-auto max-w-full rounded-lg" src={image8.src} alt=""/>
+                            </Link>
+                            <Link href={image9.src} isExternal>
+                                <Image id="9" loading="lazy" className="h-auto max-w-full rounded-lg" src={image9.src} alt=""/>
+                            </Link>
+                            <Link href={image16.src} isExternal>
+                                <Image id="16" loading="lazy" className="h-auto max-w-full rounded-lg" src={image16.src} alt=""/>
+                            </Link>
+                            <Link href={image21.src} isExternal>
+                                <Image id="21" loading="lazy" className="h-auto max-w-full rounded-lg" src={image21.src} alt=""/>
+                            </Link>
+                            <Link href={image25.src} isExternal>
+                                <Image id="25" loading="lazy" className="h-auto max-w-full rounded-lg" src={image25.src} alt=""/>
+                            </Link>
+                            <Link href={image29.src} isExternal>
+                                <Image id="29" loading="lazy" className="h-auto max-w-full rounded-lg" src={image29.src} alt=""/>
+                            </Link>
                         </div>
                         <div className="grid gap-4">
-                            <div>
-                                <Image id="11" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image11.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="12" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image12.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="13" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image13.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="14" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image14.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="15" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image15.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="22" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image22.src} alt=""/>
-                            </div>
-                            <div>
-                                <Image id="26" loading="lazy" className="h-auto max-w-full rounded-lg" onClick={(e) => setModalImage(images[Number(e.target.id) - 1])} src={image26.src} alt=""/>
-                            </div>
+                            <Link href={image11.src} isExternal>
+                                <Image id="11" loading="lazy" className="h-auto max-w-full rounded-lg" src={image11.src} alt=""/>
+                            </Link>
+                            <Link href={image12.src} isExternal>
+                                <Image id="12" loading="lazy" className="h-auto max-w-full rounded-lg" src={image12.src} alt=""/>
+                            </Link>
+                            <Link href={image13.src} isExternal>
+                                <Image id="13" loading="lazy" className="h-auto max-w-full rounded-lg" src={image13.src} alt=""/>
+                            </Link>
+                            <Link href={image14.src} isExternal>
+                                <Image id="14" loading="lazy" className="h-auto max-w-full rounded-lg" src={image14.src} alt=""/>
+                            </Link>
+                            <Link href={image15.src} isExternal>
+                                <Image id="15" loading="lazy" className="h-auto max-w-full rounded-lg" src={image15.src} alt=""/>
+                            </Link>
+                            <Link href={image22.src} isExternal>
+                                <Image id="22" loading="lazy" className="h-auto max-w-full rounded-lg" src={image22.src} alt=""/>
+                            </Link>
+                            <Link href={image26.src} isExternal>
+                                <Image id="26" loading="lazy" className="h-auto max-w-full rounded-lg" src={image26.src} alt=""/>
+                            </Link>
                         </div>
                     </div>
 
                 </Container>
             </Layout>
-            <div
+            {/* <div
                 style={{
                     display: modalImage ? "flex" : "none",
                     position: "fixed",
@@ -376,7 +376,7 @@ const Photography = () => {
                         htmlHeight={modalImage?.or === "portrait" ? "100%" : "auto"}
                     />
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
