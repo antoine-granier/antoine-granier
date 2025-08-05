@@ -21,7 +21,6 @@ import image6 from "../public/images/photography/pictures/image_6.webp";
 import image7 from "../public/images/photography/pictures/image_7.webp";
 import image8 from "../public/images/photography/pictures/image_8.webp";
 import image9 from "../public/images/photography/pictures/image_9.webp";
-import image10 from "../public/images/photography/pictures/image_10.webp";
 import image11 from "../public/images/photography/pictures/image_11.webp";
 import image12 from "../public/images/photography/pictures/image_12.webp";
 import image13 from "../public/images/photography/pictures/image_13.webp";
@@ -43,159 +42,9 @@ import image28 from "../public/images/photography/pictures/image_28.webp";
 import image29 from "../public/images/photography/pictures/image_29.webp";
 
 const Photography = () => {
-
-    // const images = [
-    //     {
-    //         src: image1.src,
-    //         alt: "image1",
-    //         or: "portrait"
-    //     },
-    //     {
-    //         src: image2.src,
-    //         alt: "image2",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image3.src,
-    //         alt: "image3",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image4.src,
-    //         alt: "image4",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image5.src,
-    //         alt: "image5",
-    //         or: "portrait"
-    //     },
-    //     {
-    //         src: image6.src,
-    //         alt: "image6",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image7.src,
-    //         alt: "image7",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image8.src,
-    //         alt: "image8",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image9.src,
-    //         alt: "image9",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image10.src,
-    //         alt: "image10",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image11.src,
-    //         alt: "image11",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image12.src,
-    //         alt: "image12",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image13.src,
-    //         alt: "image13",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image14.src,
-    //         alt: "image14",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image15.src,
-    //         alt: "image15",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image16.src,
-    //         alt: "image16",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image17.src,
-    //         alt: "image17",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image18.src,
-    //         alt: "image18",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image19.src,
-    //         alt: "image19",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image20.src,
-    //         alt: "image20",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image21.src,
-    //         alt: "image21",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image22.src,
-    //         alt: "image22",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image23.src,
-    //         alt: "image23",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image24.src,
-    //         alt: "image24",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image25.src,
-    //         alt: "image25",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image26.src,
-    //         alt: "image26",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image27.src,
-    //         alt: "image27",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image28.src,
-    //         alt: "image28",
-    //         or: "landscape"
-    //     },
-    //     {
-    //         src: image29.src,
-    //         alt: "image29",
-    //         or: "landscape"
-    //     }
-    // ];
     
 
     const { t } = useTranslation()
-
-    // const [modalImage, setModalImage] = useState(null)
 
     return (
         <>
@@ -326,55 +175,6 @@ const Photography = () => {
 
                 </Container>
             </Layout>
-            {/* <div
-                style={{
-                    display: modalImage ? "flex" : "none",
-                    position: "fixed",
-                    top: "0",
-                    left: "0",
-                    background: "rgba(0, 0, 0, 0.7)",
-                    width: "100%",
-                    height: "100%",
-                    alignItems: "center",
-                    justifyContent: "center"
-                }}
-            >
-                <div
-                    style={{
-                        position: "relative",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        height: "85%",
-                        width: "100%"
-                    }}
-                >
-                    <div
-                        style={{
-                            position: "absolute",
-                            top: "10px",
-                            right: "10px",
-                            cursor: "pointer",
-                            background: "rgba(0,0,0,0.5)",
-                            borderRadius: "100%"
-                        }}
-                        onClick={() => setModalImage(null)}
-                    >
-                        <XMarkIcon style={{width: "25px", height: "25px", color: useColorModeValue('#000000', '#ffffff')}}/>
-                    </div>
-                    <Image
-                        className={`max-w-[100%] md:max-w-[${modalImage?.or === "portrait" ? "700px" : "600px"}]`}
-                        style={{
-                            rotate: modalImage?.or === "portrait" ? "-90deg" : "0deg",
-                        }}
-                        src={modalImage?.src} 
-                        alt={modalImage?.alt} 
-                        loading="lazy" 
-                        htmlWidth={modalImage?.or === "landscape" ? "100%" : "auto"} 
-                        htmlHeight={modalImage?.or === "portrait" ? "100%" : "auto"}
-                    />
-                </div>
-            </div> */}
         </>
     )
 }
